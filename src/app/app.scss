@@ -14,3 +14,32 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-menu {
+
+    ion-header {
+        ion-avatar img, ion-thumbnail img {
+            display: block;
+            border-radius: 50%;
+            width: 100px;
+            margin: 0 auto;
+        }
+    }
+
+    ion-content {
+        background: #0f0c29;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #0e0e17, #2c2b48, #6361a1);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #0e0e17, #2c2b48, #6361a1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        .item-block {
+            color: #f4f4f4;
+            background-color: transparent;
+        }
+    }
+
+    ion-footer {
+        .item-block {
+            color: #f4f4f4;
+            background-color: transparent;
+        }
+    }
+}
+

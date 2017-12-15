@@ -1,17 +1,49 @@
-<ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-menu [content]="content" type="push" padding-top>
 
+  <ion-header padding margin-vertical>
+    <ion-avatar>
+      <img src="assets/imgs/1212478_25ea.jpg" alt="Name">
+    </ion-avatar>
+    <h6 text-center ion-text color="light">Jahlom Agboado</h6>
+  </ion-header>
   <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+
+    <ion-list no-lines color="transparent">
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="mail" item-start></ion-icon>
+        Inbox
+        <ion-badge item-end color="secondary">2</ion-badge>
+      </button>
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="apps" item-start></ion-icon>
+        Groups
+      </button>
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="send" item-start></ion-icon>
+        Sent
+      </button>
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="mail" item-start></ion-icon>
+        Draft
+      </button>
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="trash" item-start></ion-icon>
+        Trash
       </button>
     </ion-list>
   </ion-content>
+  <ion-footer>
+    <ion-list no-lines>
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="settings" item-start></ion-icon>
+        Settings
+      </button>
+      <button menuClose ion-item color="light" detail-none>
+        <ion-icon name="log-out" item-start></ion-icon>
+        Logout
+      </button>
+    </ion-list>
+  </ion-footer>
 
 </ion-menu>
 
