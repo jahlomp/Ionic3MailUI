@@ -1,6 +1,6 @@
 <ion-menu [content]="content" type="push" padding-top>
 
-  <ion-header padding margin-vertical>
+  <ion-header padding margin-vertical no-border>
     <ion-avatar>
       <img src="assets/imgs/1212478_25ea.jpg" alt="Name">
     </ion-avatar>
@@ -9,36 +9,36 @@
   <ion-content>
 
     <ion-list no-lines color="transparent">
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('InboxPage')">
         <ion-icon name="mail" item-start></ion-icon>
         Inbox
         <ion-badge item-end color="secondary">2</ion-badge>
       </button>
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('GroupsPage')">
         <ion-icon name="apps" item-start></ion-icon>
         Groups
       </button>
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('SentPage')">
         <ion-icon name="send" item-start></ion-icon>
         Sent
       </button>
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('DraftPage')">
         <ion-icon name="mail" item-start></ion-icon>
         Draft
       </button>
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('TrashPage')">
         <ion-icon name="trash" item-start></ion-icon>
         Trash
       </button>
     </ion-list>
   </ion-content>
-  <ion-footer>
+  <ion-footer no-border>
     <ion-list no-lines>
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('SettingsPage')">
         <ion-icon name="settings" item-start></ion-icon>
         Settings
       </button>
-      <button menuClose ion-item color="light" detail-none>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('LogoutPage')">
         <ion-icon name="log-out" item-start></ion-icon>
         Logout
       </button>

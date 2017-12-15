@@ -1,18 +1,17 @@
-<!--
-  Generated template for the LogoutPage page.
+<ion-header no-border>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>LogoutPage</ion-title>
+  <ion-navbar transparent>
+    <ion-title></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-icon name="log-out" color="light"></ion-icon>
+  <h5 text-center ion-text color="light">Are you sure you want <br/> to log out</h5>
 </ion-content>
+<ion-footer no-border padding>
+  <button ion-button color="secondary" block text-capitalize navPush="InboxPage">Logout</button>
+  <button ion-button color="light" outline block navPush="InboxPage">Cancel</button>
+</ion-footer>

@@ -9,5 +9,8 @@ import { SentPage } from './sent';
   imports: [
     IonicPageModule.forChild(SentPage),
   ],
+  exports: [
+    SentPage
+  ]
 })
 export class SentPageModule {}

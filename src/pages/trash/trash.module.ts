@@ -9,5 +9,8 @@ import { TrashPage } from './trash';
   imports: [
     IonicPageModule.forChild(TrashPage),
   ],
+  exports: [
+    TrashPage
+  ]
 })
 export class TrashPageModule {}
