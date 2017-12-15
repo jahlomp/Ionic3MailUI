@@ -22,4 +22,8 @@ export class LogoutPage {
     console.log('ionViewDidLoad LogoutPage');
   }
 
+  openPage(page) {
+    this.navCtrl.setRoot(page);
+  }
+
 }

@@ -12,6 +12,6 @@
   <h5 text-center ion-text color="light">Are you sure you want <br/> to log out</h5>
 </ion-content>
 <ion-footer no-border padding>
-  <button ion-button color="secondary" block text-capitalize navPush="InboxPage">Logout</button>
-  <button ion-button color="light" outline block navPush="InboxPage">Cancel</button>
+  <button ion-button color="secondary" block text-capitalize (click)="openPage('InboxPage')">Logout</button>
+  <button ion-button color="light" outline block (click)="openPage('InboxPage')">Cancel</button>
 </ion-footer>
