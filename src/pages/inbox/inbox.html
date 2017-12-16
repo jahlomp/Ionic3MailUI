@@ -15,232 +15,16 @@
 <ion-content>
 
   <ion-list>
-    <ion-item-sliding>
+
+    <ion-item-sliding *ngFor="let message of messages" (click)="readMessage(message)">
       <ion-item>
         <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
+          <img src="assets/imgs/{{message.image}}">
         </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
-      </ion-item>
-      <ion-item-options side="left">
-        <button ion-button color="primary">
-          <ion-icon name="undo"></ion-icon>
-          Reply
-        </button>
-      </ion-item-options>
-      <ion-item-options side="right">
-        <button ion-button color="danger">
-          <ion-icon name="trash"></ion-icon>
-          Delete
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="assets/imgs/1212478_25ea.jpg">
-        </ion-thumbnail>
-        <h2>Jahlom Agboado</h2>
-        <h3>This town ain't big enough for the two of us!</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit
-          inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!</p>
-        <ion-note item-end>3:43 pm</ion-note>
+        <h2>{{message.name}}</h2>
+        <h3>{{message.subject}}</h3>
+        <p>{{message.message}}</p>
+        <ion-note item-end>{{message.date_recieved | date}}</ion-note>
       </ion-item>
       <ion-item-options side="left">
         <button ion-button color="primary">
@@ -259,7 +43,7 @@
   </ion-list>
 
   <ion-fab right bottom>
-    <button ion-fab color="secondary">
+    <button ion-fab color="secondary" navPush="ComposeMailPage">
       <ion-icon name="create"></ion-icon>
     </button>
   </ion-fab>
