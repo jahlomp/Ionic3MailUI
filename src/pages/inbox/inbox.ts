@@ -16,6 +16,27 @@ import { IonicPage, NavController, ModalController } from 'ionic-angular';
 export class InboxPage {
   messages = [
     {
+      name: "Precious Jahlom Agboado",
+      image: "precious_agboado.jpg",
+      subject:"This town ain't big enough for the two of us!",
+      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
+      date_recieved: new Date("2017-05-03")
+    },
+    {
+      name: "Paul Halliday",
+      image: "paul_halliday.jpg",
+      subject:"This town ain't big enough for the two of us!",
+      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
+      date_recieved: new Date("2017-05-03")
+    },
+    {
+      name: "Joshua Morony",
+      image: "josh_morony.jpg",
+      subject:"This town ain't big enough for the two of us!",
+      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
+      date_recieved: new Date("2017-05-03")
+    },
+    {
       name: "Adam Bradley",
       image: "adam-bradley.jpg",
       subject:"This town ain't big enough for the two of us!",
@@ -35,55 +56,6 @@ export class InboxPage {
       subject:"This town ain't big enough for the two of us!",
       message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
       date_recieved: new Date("2017-07-03")
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date()
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date("2017-05-09")
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date("2017-05-09")
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date("2017-05-09")
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date("2017-05-09")
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date("2017-05-09")
-    },
-    {
-      name: "Adam Bradley",
-      image: "adam-bradley.jpg",
-      subject:"This town ain't big enough for the two of us!",
-      message: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque error, ut distinctio maxime non hic adipisci suscipit inventore dignissimos ad, harum, vero ullam odio ab nulla culpa enim sit rem!",
-      date_recieved: new Date("2017-05-09")
     }
   ]
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
