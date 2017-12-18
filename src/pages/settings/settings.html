@@ -6,12 +6,43 @@
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Settings</ion-title>
+    <ion-title text-center>Settings</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-list>
+    <ion-list-header color="light">
+      <ion-avatar item-start>
+        <img src="assets/imgs/1212478_25ea.jpg" alt="Name">
+      </ion-avatar>
+      <h2>Precious Jahlom Agboado</h2>
+      <h3>jahlomp@gmail.com</h3>
+    </ion-list-header>
+    <ion-item detail-push>
+      <h2>General</h2>
+    </ion-item>
+    <ion-item>
+      <h2 item-start>Notification</h2>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <h2 item-start>Sound</h2>
+      <ion-toggle checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item detail-push>
+      <h2>Theme</h2>
+      <ion-note item-end>
+        Standard
+      </ion-note>
+    </ion-item>
+    <ion-item detail-push>
+      <h2>Support</h2>
+    </ion-item>
+    <ion-item detail-push>
+      <h2>Privacy</h2>
+    </ion-item>
+  </ion-list>
 </ion-content>
