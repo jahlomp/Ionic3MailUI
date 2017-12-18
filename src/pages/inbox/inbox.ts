@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, ModalController } from 'ionic-angular';
 
 /**
  * Generated class for the InboxPage page.
@@ -86,7 +86,7 @@ export class InboxPage {
       date_recieved: new Date("2017-05-09")
     }
   ]
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -95,5 +95,9 @@ export class InboxPage {
 
   readMessage(message) {
     this.navCtrl.push("MessagePage", { message: message })
+  }
+
+  composeMessage(){
+    this.modalCtrl.create("ComposeMailPage").present();
   }
 }
