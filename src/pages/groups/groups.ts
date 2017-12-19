@@ -23,7 +23,7 @@ export class GroupsPage {
   }
 
   openPage(page) {
-    this.navCtrl.setRoot(page);
+    this.navCtrl.push(page);
   }
 
 }
