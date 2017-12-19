@@ -1,0 +1,29 @@
+<ion-header no-border>
+
+  <ion-navbar transparent>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-icon name="person-add" color="light"></ion-icon>
+  <h3 text-center ion-text color="light">Sign Up</h3>
+  <form>
+    <ion-item no-padding>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item no-padding>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button color="secondary" block text-capitalize (click)="openPage('InboxPage')">Signup</button>
+    <p text-center>
+      <ion-note>or</ion-note>
+    </p>
+    <button ion-button color="light" outline block (click)="openPage('LoginPage')">Login</button>
+  </form>
+</ion-content>
