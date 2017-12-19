@@ -30,24 +30,44 @@
         <ion-icon name="trash" item-start></ion-icon>
         Trash
       </button>
+
+      <ion-item-divider color="light">Groups</ion-item-divider>
+
+      <button menuClose ion-item color="light" detail-none (click)="openPage('PromosPage')">
+        <ion-icon name="pricetag" item-start></ion-icon>
+        Promos
+      </button>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('SocialPage')">
+        <ion-icon name="people" item-start></ion-icon>
+        Social
+      </button>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('ForumsPage')">
+        <ion-icon name="chatboxes" item-start></ion-icon>
+        Forums
+      </button>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('FinancePage')">
+        <ion-icon name="cash" item-start></ion-icon>
+        Finance
+      </button>
+      <ion-item-divider color="light">Account</ion-item-divider>
       <button menuClose ion-item color="light" detail-none (click)="openPage('LoginPage')">
         <ion-icon name="log-in" item-start></ion-icon>
         Login
+      </button>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('LogoutPage')">
+        <ion-icon name="log-out" item-start></ion-icon>
+        Logout
       </button>
       <button menuClose ion-item color="light" detail-none (click)="openPage('SignupPage')">
         <ion-icon name="person-add" item-start></ion-icon>
         Signup
       </button>
-      <ion-list no-lines>
-        <button menuClose ion-item color="light" detail-none (click)="openPage('SettingsPage')">
-          <ion-icon name="settings" item-start></ion-icon>
-          Settings
-        </button>
-        <button menuClose ion-item color="light" detail-none (click)="openPage('LogoutPage')">
-          <ion-icon name="log-out" item-start></ion-icon>
-          Logout
-        </button>
-      </ion-list>
+      <ion-item-divider color="light">Settings</ion-item-divider>
+      <button menuClose ion-item color="light" detail-none (click)="openPage('SettingsPage')">
+        <ion-icon name="settings" item-start></ion-icon>
+        Settings
+      </button>
+
     </ion-list>
 
   </ion-content>
