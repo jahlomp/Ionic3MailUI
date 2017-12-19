@@ -1,17 +1,38 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-buttons left>
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Groups</ion-title>
+    <ion-title text-center>Groups</ion-title>
   </ion-navbar>
-
+  <ion-searchbar placeholder="Search"></ion-searchbar>
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-grid text-center>
+    <ion-row>
+      <ion-col>
+        <button ion-button round outline color="primary" (click)="openPage('PromosPage')">20</button>
+        <h6 text-center>Promos</h6>
+      </ion-col>
+      <ion-col>
+        <button ion-button round outline color="dark" (click)="openPage('SocialPage')">12</button>
+        <h6 text-center>Social</h6>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button round outline color="royal" (click)="openPage('ForumsPage')">6</button>
+        <h6 text-center>Forums</h6>
+      </ion-col>
+      <ion-col>
+        <button ion-button round outline color="danger" (click)="openPage('FinancePage')">2</button>
+        <h6 text-center>Finance</h6>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

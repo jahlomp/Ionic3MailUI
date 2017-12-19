@@ -22,4 +22,8 @@ export class GroupsPage {
     console.log('ionViewDidLoad GroupsPage');
   }
 
+  openPage(page) {
+    this.navCtrl.setRoot(page);
+  }
+
 }
