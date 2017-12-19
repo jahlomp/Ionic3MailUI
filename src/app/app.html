@@ -38,21 +38,19 @@
         <ion-icon name="person-add" item-start></ion-icon>
         Signup
       </button>
+      <ion-list no-lines>
+        <button menuClose ion-item color="light" detail-none (click)="openPage('SettingsPage')">
+          <ion-icon name="settings" item-start></ion-icon>
+          Settings
+        </button>
+        <button menuClose ion-item color="light" detail-none (click)="openPage('LogoutPage')">
+          <ion-icon name="log-out" item-start></ion-icon>
+          Logout
+        </button>
+      </ion-list>
     </ion-list>
-  </ion-content>
-  <ion-footer no-border>
-    <ion-list no-lines>
-      <button menuClose ion-item color="light" detail-none (click)="openPage('SettingsPage')">
-        <ion-icon name="settings" item-start></ion-icon>
-        Settings
-      </button>
-      <button menuClose ion-item color="light" detail-none (click)="openPage('LogoutPage')">
-        <ion-icon name="log-out" item-start></ion-icon>
-        Logout
-      </button>
-    </ion-list>
-  </ion-footer>
 
+  </ion-content>
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
